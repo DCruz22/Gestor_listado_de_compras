@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1443591734 source:c:\users\dariel\documents\c++\gestor_listado_compras\articulo.cpp
+	"articulo.h"
+	"string"
+
+1443591519 c:\users\dariel\documents\c++\gestor_listado_compras\articulo.h
+	"string"
+
+1443670189 source:c:\users\dariel\documents\c++\gestor_listado_compras\lista.cpp
+	"lista.h"
+	"articulo.h"
+	"iostream"
+
+1443631243 c:\users\dariel\documents\c++\gestor_listado_compras\lista.h
+	"articulo.h"
+
+1443669727 source:c:\users\dariel\documents\c++\gestor_listado_compras\main.cpp
+	<iostream>
+	<cstdlib>
+	"lista.h"
+	"gestor.h"
+
+1443670258 source:c:\users\dariel\documents\c++\gestor_listado_compras\gestor.cpp
+	"gestor.h"
+	<iostream>
+
+1443668080 c:\users\dariel\documents\c++\gestor_listado_compras\gestor.h
+	"lista.h"
+	"articulo.h"
+	"string"
+
+1443591734 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\gestor_listado_compras\articulo.cpp
+	"articulo.h"
+	"string"
+
+1443591519 c:\users\dariel\appdata\roaming\local libraries\local documents\c++\gestor_listado_compras\articulo.h
+	"string"
+
+1443743532 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\gestor_listado_compras\lista.cpp
+	"lista.h"
+	"articulo.h"
+	"iostream"
+
+1443762137 c:\users\dariel\appdata\roaming\local libraries\local documents\c++\gestor_listado_compras\lista.h
+	"articulo.h"
+	"lista.h"
+
+1443669727 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\gestor_listado_compras\main.cpp
+	<iostream>
+	<cstdlib>
+	"lista.h"
+	"gestor.h"
+
+1443668080 c:\users\dariel\appdata\roaming\local libraries\local documents\c++\gestor_listado_compras\gestor.h
+	"lista.h"
+	"articulo.h"
+	"string"
+
+1443761816 source:c:\users\dariel\appdata\roaming\local libraries\local documents\c++\gestor_listado_compras\gestor.cpp
+	"gestor.h"
+	<iostream>
+	<windows.h>
+
