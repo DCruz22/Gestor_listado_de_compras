@@ -54,19 +54,24 @@ void Gestor::iniciar(Lista* lista)
         system("cls");
         imprimirCabecera();
         lista -> mostrarArticulos();
+        cout << "--Presione ENTER para regresar el menu principal--\n" << endl;
+        cin.ignore();
+        cin.get();
         iniciar(lista);
         break;
     case 2:
         system("cls");
         imprimirCabecera();
         lista -> agregarArticulo(crearArticulo());
+        cout << "\n--Articulo Agregado. Presione ENTER para regresar el menu principal--\n" << endl;
+        cin.ignore();
+        cin.get();
         iniciar(lista);
         break;
     case 3:
-        int indice;
-        cout << "Ingrese el numero del articulo a eliminar: ";
-        cin >> indice;
-        lista -> eliminarArticulo(indice, lista);
+        system("cls");
+        imprimirCabecera();
+        lista -> eliminarArticulo(lista);
         iniciar(lista);
         break;
     case 4:

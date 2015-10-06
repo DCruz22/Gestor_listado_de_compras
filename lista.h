@@ -10,7 +10,7 @@ class Lista
         Lista();
         ~Lista();
         void agregarArticulo(Articulo* articulo);
-        void eliminarArticulo(int indice, Lista* lista);
+        void eliminarArticulo(Lista* lista);
         void mostrarArticulos();
         Articulo* getPrimero();
         void setPrimero(Articulo* primero);

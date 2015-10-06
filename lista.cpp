@@ -20,9 +20,6 @@ void Lista::agregarArticulo(Articulo* articulo)
         ultimo -> setSiguiente(articulo);
         ultimo = articulo;
     }
-    cout << "\n--Articulo Agregado. Presione ENTER para regresar el menu principal--\n" << endl;
-    cin.ignore();
-    cin.get();
 }
 Articulo* Lista::getPrimero()
 {
@@ -44,20 +41,24 @@ void Lista::setUltimo(Articulo* ultimo)
     this -> ultimo = ultimo;
 }
 
-void Lista::eliminarArticulo(int indice, Lista* lista)
+void Lista::eliminarArticulo(Lista* lista)
 {
     Lista* temp = new Lista();
     Articulo* i = this -> getPrimero();
+
     if(i != NULL){
-        int contador = 1;
+        mostrarArticulos();
+        int contador = 1, indice = 0;
+        cout << "Ingrese el numero del articulo a eliminar: ";
+        cin >> indice;
         while(i != NULL){
             if(indice != contador){
                 temp -> agregarArticulo(i);
-                i = i -> getSiguiente();
             }
+            i = i -> getSiguiente();
             contador++;
         }
-        lista = temp;
+        *lista = *temp;
         delete temp;
         cout << "\n--Articulo Eliminado. Presione ENTER para regresar el menu principal--\n" << endl;
         cin.ignore();
@@ -86,9 +87,6 @@ void Lista::mostrarArticulos()
     }else{
         cout << "No hay ningun articulo en la lista.\n" << endl;
     }
-    cout << "--Presione ENTER para regresar el menu principal--\n" << endl;
-    cin.ignore();
-    cin.get();
 }
 
 Lista::~Lista()
